@@ -3,4 +3,6 @@
 @import "/Css/introducao.css";
 @import "/Css/formaçao.css";
 @import "/Css/footer.css";
-@import "/Css/animaçaoJS.css"; /*@import'/Css/experiencia.css';*/
+@import "/cssSlide/style.css";
+@import "/Css/animaçaoJS.css";
+@import "/Css/experiencia.css";
