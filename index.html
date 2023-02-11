@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Desenvolvedor Front End & UX/UI Designer Localizado no Rio de Janeiro">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./cssSlide/style.css">
 
     <title>Portifólio</title>
 </head>
@@ -24,58 +25,94 @@
         </nav>
     </header>
     <main class="introducao">
-        <img src="/Profile/tinywow_profile_photo_7762179 (1).png" alt="imagem perfil" width="360" height="520">
+        <img src="./Profile/tinywow_profile_photo_7762179 (1).png" alt="imagem perfil" width="360" height="520">
         <div class="js-scroll">
             <h1>Desenvolvedor <br> Front End -<br> HTML, CSS e JavaScript</h1>
             <p>Localizado em Camaquã-RS</p>
         </div>
     </main>
-    <section class="experiencia js-scroll" id="experiencia" aria-label="Experiência">
-        <h2 class="subtitulo">Experiência</h2>
-        <div>
-            <p class="experiencia-texto">Desenvolvi pequenos projetos utilizando <strong> HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong> e <strong>JavaScript</strong>.
-            <div class="empresa">
-                <span class="empresa-ano">2022</span>
-                <h3 class="empresa-titulo">Rocketpay</h3>
-                <span class="empresa-titulo">Projeto</span>
-                <p class="empresa-texto">Neste projeto participei de um evento da Rocketseat onde criamos um cadastro de cartão de crédito muito interativo com JavaScript e utilizando ferramentas como Imask,npm e Regex.</p>
-                <ul class="empresa-habilidades">
-                    <li><a href="https://explore-lab-omega.vercel.app/">Cartão de Crédito</a></li>
-                </ul>
-            </div>
-            <div class="empresa">
-                <span class="empresa-ano">2022</span>
-                <h3 class="empresa-titulo">Bikcraft</h3>
-                <span class="empresa-titulo">Projeto</span>
-                <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do Site.</p>
-                <ul class="empresa-habilidades">
-                    <li><a href="https://projetbikcraft.netlify.app/">Projeto Bikcraft</a></li>
-                </ul>
-            </div>
-            <div class="empresa">
-                <span class="empresa-ano">2022</span>
-                <h3 class="empresa-titulo">Caravan</h3>
-                <span class="empresa-titulo">Projeto</span>
-                <p class="empresa-texto">O projeto Caravan simula um site de viagens e nele utilizei o Framework de Bootstrap concluindo um site totalmente responsivo e interativo.</p>
-                <ul class="empresa-habilidades">
-                    <li><a href="https://admirable-pasca-ffa679.netlify.app/">Caravan</a></li>
-                </ul>
-            </div>
-            <div class="empresa">
-                <span class="empresa-ano">2022</span>
-                <h3 class="empresa-titulo">Lista de Tarefas</h3>
-                <span class="empresa-titulo">Projeto</span>
-                <p class="empresa-texto">Para praticar melhor a lógica de programação criei esta lista de tarefas com JavaScript, na lista você pode adicionar, remover e salvar as suas tarefas.</p>
-                <ul class="empresa-habilidades">
-                    <li><a href="https://lista-de-tarefa-lime.vercel.app/">Lista de Tarefas</a></li>
-                </ul>
-            </div>
+    <section class="container-slide js-scroll" id="experiencia">
+        <ul class="custom-controls">
+            <li><img src="./imgRedonda/tinywow_animais_13651103.png" alt=""></li>
+            <li><img src="./imgRedonda/tinywow_conversor_13651276.png" alt=""></li>
+            <li><img src="./imgRedonda/tinywow_bikcraft_13651398.png" alt=""></li>
+            <li><img src="./imgRedonda/tinywow_rocketPay_13651492.png" alt=""></li>
+            <li><img src="./imgRedonda/tinywow_caravan_13651583.png" alt=""></li>
+            <li><img src="./imgRedonda/tinywow_listaTarefa_13651639.png" alt=""></li>
+        </ul>
+        <div class="slide-wrapper div-slides">
+            <ul class="slide">
+                <li>
+                    <div class="container-img">
+                        <a href="https://andsu29.github.io/animais-fantasticos-slide/"><img src="./imgProjetos/animais.png" alt=""></a>
+                        <div class="legenda">
+                            <h1>Animais Fantásticos</h1>
+                            <p>Projeto concluído no curso de JavaScript da Origamid, todo codificado do zero, responsivo, com animações no scroll, modal, API puxando dados externos como valor de bitcoin em real e um slide tambem codificado do zero unificando a este projeto.
+                                Utilizando ferramentas como Visual Studio Code, Node.js, Npm e Git.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-img">
+                        <a href="https://andsu29.github.io/conversor-de-moedas/"><img src="./imgProjetos/conversor.png" alt=""></a>
+                        <div class="legenda">
+                            <h1>Conversor de Moedas</h1>
+                            <p>Neste projeto quis testar minhas habilidades com API em JavaScript, utilizando o fetch, um projeto simples onde codifiquei menos e pensei mais.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-img">
+                        <a href="https://projetbikcraft.netlify.app/"><img src="./imgProjetos/bikcraft.png" alt=""></a>
+                        <div class="legenda">
+                            <h1>Bikcraft</h1>
+                            <p>O projeto Bikcraft foi criado no curso da Origamid onde trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do Site.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-img">
+                        <a href="https://explore-lab-omega.vercel.app/"><img src="./imgProjetos/rocketPay.png" alt=""></a>
+                        <div class="legenda">
+                            <h1>Rocketpay</h1>
+                            <p>Neste projeto participei de um evento da Rocketseat onde criamos um cadastro de cartão de crédito muito interativo com JavaScript utilizando ferramentas como Imask,npm e Regex.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-img">
+                        <a href="https://admirable-pasca-ffa679.netlify.app/"><img src="./imgProjetos/caravan.png" alt=""></a>
+                        <div class="legenda">
+                            <h1>Caravan</h1>
+                            <p>O projeto Caravan simula um site de viagens e nele utilizei o Framework de Bootstrap concluindo um site totalmente responsivo e interativo.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container-img">
+                        <a href="https://lista-de-tarefa-lime.vercel.app/"><img src="./imgProjetos/listaTarefa.png" alt=""></a>
+                        <div class="legenda">
+                            <h1>Lista de Tarefas</h1>
+                            <p>Para praticar melhor a lógica de programação criei esta lista de tarefas com JavaScript, na lista você pode adicionar, remover e salvar as suas tarefas.</p>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="arrow-nav">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+
+
     </section>
     <section class="formaçao js-scroll" id="formaçao" aria-label="formação">
         <div class="formaçao-container">
             <h2 class="subtitulo">Formação</h2>
             <div>
-                <p class="formaçao-texto">Estou ingressando no mundo da programação a pouco tempo, mas estou 100% focado e dedicado aos estudos, assim podendo dar o meu melhor ao mercado de trabalho. Além disso me mantendo sempre atualizado com cursos intensivos online.
+                <p class="formaçao-texto">Estou ingressando no mundo da programação a pouco tempo, mas estou 100% focado e dedicado aos estudos, aumentando minha experiência assim podendo dar o meu melhor ao mercado de trabalho. Além disso me mantendo sempre atualizado com cursos intensivos online.
                 </p>
 
                 <div class="formaçao-extra">
@@ -85,6 +122,7 @@
                             <li>JavaScript<span>74h</span></li>
                             <li>Front End para Iniciantes (HTML,CSS e JavaScript)<span>48h</span></li>
                             <li>Bootstrap<span>10h</span></li>
+                            <li>Automação Front-End com NPM e Git<span>8h</span></li>
                         </ul>
                     </div>
 
@@ -100,18 +138,21 @@
     <footer class="footer js-scroll" id="contato">
         <div class="footer-container">
             <h1 id="contato" aria-label="contato">Contato</h1>
-            <p class="footer-texto">Sei que é apenas o começo e o caminho é longo e nunca vou saber de tudo, mas procuro evoluir cada dia mais para alcançar meus objetivos e ser um grande profissional na no ramo da programação.</p>
+            <p class="footer-texto">Sei que é apenas o começo, o caminho é longo e nunca vou saber de tudo, mas procuro evoluir cada dia mais para alcançar meus objetivos e ser um grande profissional no ramo da programação.</p>
             <ul class="footer-contato">
                 <li><a href="tel:+5551994323519">+55 51 994323519</a></li>
                 <li><a href="mailto:andersonduarteg4@gmail.com">andersonduarteg4@gmail.com</a></li>
                 <li><a href="https://www.instagram.com/andsu_duart/">@Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/anderson-duarte-74346b240/">Linkedin</a></li>
+                <li><a href="https://github.com/Andsu29">GitHub</a></li>
             </ul>
             <p class="footer-copy">Anderson Gomes Duarte</p>
 
         </div>
 
     </footer>
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
+    <script type="module" src="./js/scriptSlide.js"></script>
 </body>
 
 </html>

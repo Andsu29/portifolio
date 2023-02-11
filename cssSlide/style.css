@@ -1,0 +1,138 @@
+.div-slides img {
+  height: 410px;
+  position: relative;
+  z-index: -9999999;
+}
+.div-slides {
+  margin-top: 10px;
+}
+.container-slide ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.slide-wrapper {
+  overflow: hidden;
+}
+.slide {
+  display: flex;
+}
+.slide:hover {
+  will-change: transform;
+}
+.container-img {
+  position: relative;
+}
+.legenda h1,
+p {
+  margin: 0px;
+  margin-bottom: 10px;
+  color: #eae5e5;
+  line-height: 1.5;
+}
+.legenda {
+  visibility: hidden;
+  position: absolute;
+  max-width: 70ch;
+  left: 10px;
+  bottom: 40px;
+}
+.container-img:hover .legenda {
+  visibility: visible;
+}
+
+.container-img:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(214, 214, 214, 0) 0%,
+    rgba(48, 47, 47, 0.5) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #fb5;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  background: #e54;
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-controls li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: rgb(106, 105, 105) url("/imgSlide/arrow.svg") center no-repeat;
+}
+
+.arrow-nav button.prev {
+  transform: rotate(-180deg);
+}
